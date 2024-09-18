@@ -1,3 +1,5 @@
 ---
-title: Monero XMR Mining Projects
+title: Monero XMR Mining Project
 ---
+
+
