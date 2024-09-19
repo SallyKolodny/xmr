@@ -2,4 +2,5 @@
 title: Monero XMR Mining Project
 ---
 
-* [P2Pool Payouts](/P2Pool-Payouts.html)
+* [P2Pool Payouts Visualization](/P2Pool-Payouts.html)
+* [Configuring the Monero Daemon and P2Pool Daemon](/Kermit-Configuration.html)
