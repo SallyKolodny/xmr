@@ -122,7 +122,7 @@ To actually start the service without rebooting use the command below:
 sudo systemd start p2pool.service
 ```
 
-## Tje P2Pool Daemon Startup Script
+## The P2Pool Daemon Startup Script
 
 I use a shell script to start the P2Pool Daemon. A few points about the startup script:
 
