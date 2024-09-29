@@ -198,8 +198,8 @@ into the named pipe.
 
 The *Monero Daemon Service* is configured as a standard systemd service. To do this 
 you need to create a systemd service description file in the `/etc/systemd/system` 
-directory. Create this file as the root user. A complete listing of this file is shown 
-below.
+directory. Name this file `monerod.service` and create it as the root user. A complete 
+listing of this file is shown below.
 
 ```
 [Unit]
@@ -234,7 +234,7 @@ service and a complete service definition is shown in the next section.
 This service creates a named pipe which allows you to send commands to the *Monero Daemon*
 service. Like the *Monero Daemon* service definition, this service definition file should
 also be created in the `/etc/systemd/system` directory. A complete listing of the service 
-definition file is shown below. You need to create this file as the *root* user.
+definition file is shown below. Create this file as the *root* user and name it `monerod.socket`.
 
 ```
 [Unit]
