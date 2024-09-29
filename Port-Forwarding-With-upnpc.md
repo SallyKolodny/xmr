@@ -29,7 +29,23 @@ Use the upnpc command to get your router to forward inbound traffic to a particu
 **NOTE:** You need to run this on the machine that will receive the packets. In the example below, you'll need to run the `upnpc` comand on 192.168.1.2.
 
 ```
-upnpc -a 192.168.1.2 20080 20080 TCP
+upnpc -a 192.168.0.169 20080 20080 TCP
+```
+Sample output from the command above:
+```
+upnpc : miniupnpc library test client, version 2.2.4.
+ (c) 2005-2022 Thomas Bernard.
+Go to http://miniupnp.free.fr/ or https://miniupnp.tuxfamily.org/
+for more information.
+List of UPNP devices found on the network :
+ desc: http://192.168.0.1:5000/rootDesc.xml
+ st: urn:schemas-upnp-org:device:InternetGatewayDevice:1
+
+Found valid IGD : http://192.168.0.1:5000/ctl/IPConn
+Local LAN ip address : 192.168.0.1
+ExternalIPAddress = 107.190.99.134
+InternalIP:Port = 192.168.0.169:20080
+external 107.190.99.134:20080 TCP is redirected to internal 192.168.0.169:20080 (duration=0)
 ```
 
-The example above forward traffic on port 20080 to 192.168.1.2
+The example above forward traffic on port 20080 to 192.168.0.169
