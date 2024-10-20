@@ -7,3 +7,4 @@ title: Monero XMR Mining Project
 * [Monero Daemon Configuration](/Monero-Daemon-Configuration.html)
 * [P2Pool Daemon Configuration](/P2Pool-Daemon-Configuration.html)
 * [Port Forwarding with upnpc](/Port-Forwarding-With-upnpc.html)
+* [XMR Received](/XMR-Received.html)
