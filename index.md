@@ -8,3 +8,5 @@ title: Monero XMR Mining Project
 * [P2Pool Daemon Configuration](/pages/P2Pool-Daemon-Configuration.html)
 * [Port Forwarding with upnpc](/pages/Port-Forwarding-With-upnpc.html)
 * [XMR Received Visualization](/pages/XMR-Received.html)
+
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
