@@ -19,8 +19,13 @@ from the wallet transaction history associated with XMR Mining.
 
 Note that the graph is remarkably linear with a few exceptions:
 
-* The spikes on May 18, 2024 and on August 20, 2024 were due to winning the xmrvsbeast lottery twice! I qualify for a free ticket because I am actively mining.
+* On the dates below, I won the [XMR vs. Beast](https://xmrvsbeast.com/) lottery; I qualify for free as an active Monero miner. The *winnings* consist of extra hash power, so the actual earnings vary, but in all three cases, the spike is visible on the graph.
+  * 2024-10-02 06:41:36	Bonus: 6696.8kH/s	Round: vip
+  * 2024-08-19 06:53:37	Bonus: 6624.5kH/s	Round: vip
+  * 2024-07-12 07:20:14 ERROR: miner not found in PPLNS window, skipping
+  * 2024-05-17 10:03:26	Bonus: 7798.6kH/s	Round: vip
 * The slight increase from mid June till the end of the month is when I burned through about $750 free credits of cloud resources and I setup various container configurations (1 CPU up to 8 CPU with 8 Gb up to 32 Gb) to mine in the cloud.
+* I added another miner with a modest hash rate of only about 750 H/s in early October, 20204.
 
 The graph shows a direct relationship between hash rate and profitability and also shows that it's a consistent relationship over time.
 
