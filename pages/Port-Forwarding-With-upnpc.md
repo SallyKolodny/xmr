@@ -1,3 +1,7 @@
+# Table of Contents
+
+[Introduction and Scope](#introduction-and-scope)
+
 # Introduction and Scope
 
 You may need to configure your Internet router to forward inbound traffic to your Monero Daemon that hosts 
