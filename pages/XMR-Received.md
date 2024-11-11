@@ -5,7 +5,7 @@ date: 2024-10-29
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="/assets/js/fancyEarningsChart.js"></script>
+<script src="/assets/js/XMRReceived.js"></script>
 
 The chart below shows a visualization of the Monero XMR that the mining farm has earned. The data is taken
 from the wallet transaction history associated with XMR Mining.
@@ -29,4 +29,4 @@ Note that the graph is remarkably linear with a few exceptions:
 
 The graph shows a direct relationship between hash rate and profitability and also shows that it's a consistent relationship over time.
 
-Finally, for anyone thinking about mining in the cloud: It's not worth it. In fact it's only because my rent includes electricity that I'm able to make this profitabable.
+Finally, for anyone thinking about mining in the cloud: It's not worth it. In fact it's only because my rent includes electricity that I'm able to mine at home and make a profit.
