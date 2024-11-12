@@ -104,7 +104,7 @@ Papa.parse(csvUrl, {
             opacity: 0.4
           },
           xaxis: {
-            min: new Date("08 November 2024 00:00:00").getTime(),
+            min: new Date("09 November 2024 00:00:00").getTime(),
             max: new Date("12 November 2024 23:59:59").getTime()
           }
         }
