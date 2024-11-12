@@ -130,6 +130,9 @@ Papa.parse(csvUrl, {
           enabled: false
         }
       },
+      title: {
+	text: 'P2Pool XMR Payouts',
+	align: 'left'
     };
 
     var barChart = new ApexCharts(document.querySelector("#barChart"), barOptions);
