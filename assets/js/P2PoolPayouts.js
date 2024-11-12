@@ -75,6 +75,10 @@ Papa.parse(csvUrl, {
       tooltip: {
         theme: "dark"
       },
+      title: {
+	text: 'P2Pool XMR Payouts',
+	align: 'left'
+      },
       xaxis: {
         type: "datetime"
       //},
@@ -104,8 +108,8 @@ Papa.parse(csvUrl, {
             opacity: 0.4
           },
           xaxis: {
-            min: new Date("06 May 2024 00:00:00").getTime(),
-            max: new Date("23 May 2024 23:59:59").getTime()
+            min: new Date("08 November 2024 00:00:00").getTime(),
+            max: new Date("12 November 2024 23:59:59").getTime()
           }
         }
       },
