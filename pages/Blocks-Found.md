@@ -16,7 +16,10 @@ The chart below shows a visualization of the Monero XMR blocks that were found o
 * Finally, this *GitHub Formatted Markdown* page displays the information using a JavaScript library, ApexChart, to do the actual chart rendering.
 
 <div id="wrapper">
+  <div id="areaChart">
+  </div>
   <div id="barChart">
   </div>
  </div>
+
 
