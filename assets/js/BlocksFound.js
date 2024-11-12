@@ -1,4 +1,4 @@
-const csvUrl = '/data/p2pool_payouts.csv';
+const csvUrl = '/data/blocks_found_dev.csv';
 const dateData = [];
 const totalData = [];
 
@@ -9,7 +9,7 @@ Papa.parse(csvUrl, {
   complete: data => {
     data.data.forEach(row => {
       const dateString = row['Date'];
-      const value = row['Total'];
+      const value = row['Blocks Found'];
 
       // Check for missing or invalid data
       if (!dateString || isNaN(value)) {
@@ -76,7 +76,7 @@ Papa.parse(csvUrl, {
         theme: "dark"
       },
       title: {
-	text: 'P2Pool XMR Payouts',
+	text: 'Blocks Found',
 	align: 'left'
       },
       xaxis: {
