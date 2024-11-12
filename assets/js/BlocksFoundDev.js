@@ -1,4 +1,4 @@
-const csvUrl = '/data/blocks_found_dev.csv';
+const csvUrl = '/data/p2pool_payouts.csv';
 const dateData = [];
 const totalData = [];
 
@@ -8,7 +8,8 @@ Papa.parse(csvUrl, {
   delimiter: ",",
   complete: data => {
     data.data.forEach(row => {
-      const dateString = row['Timestamp'];
+      const dateString = row['Date'];
+      const value = row['Total'];
 
       // Check for missing or invalid data
       if (!dateString || isNaN(value)) {
@@ -21,7 +22,7 @@ Papa.parse(csvUrl, {
 
       dateData.push(date);
       //totalData.push(Number(total));
-      //totalData.push({ x: date, y: value });
+      totalData.push({ x: date, y: value });
 
     });
     
@@ -67,12 +68,16 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Blocks Found",
-          data: dateData
+          name: "Wallet Ballance",
+          data: totalData
         }
       ],
       tooltip: {
         theme: "dark"
+      },
+      title: {
+	text: 'P2Pool XMR Payouts',
+	align: 'left'
       },
       xaxis: {
         type: "datetime"
@@ -103,15 +108,15 @@ Papa.parse(csvUrl, {
             opacity: 0.4
           },
           xaxis: {
-            min: new Date("06 May 2024 00:00:00").getTime(),
-            max: new Date("23 May 2024 23:59:59").getTime()
+            min: new Date("08 November 2024 00:00:00").getTime(),
+            max: new Date("12 November 2024 23:59:59").getTime()
           }
         }
       },
       colors: ["#FF0080"],
       series: [
         {
-          data: dateData
+          data: totalData
         }
       ],
       stroke: {
