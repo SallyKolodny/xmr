@@ -75,6 +75,10 @@ Papa.parse(csvUrl, {
       tooltip: {
         theme: "dark"
       },
+      title: {
+	text: 'P2Pool XMR Payouts',
+	align: 'left'
+      },
       xaxis: {
         type: "datetime"
       //},
@@ -129,10 +133,6 @@ Papa.parse(csvUrl, {
         tooltip: {
           enabled: false
         }
-      },
-      title: {
-	text: 'P2Pool XMR Payouts',
-	align: 'left'
       },
     };
 
