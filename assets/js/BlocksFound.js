@@ -1,4 +1,4 @@
-const csvUrl = '/data/blocks_found_dev.csv';
+const csvUrl = '/data/blocks_found.csv';
 const dateData = [];
 const totalData = [];
 
