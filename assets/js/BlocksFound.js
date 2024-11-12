@@ -1,4 +1,4 @@
-const csvUrl = '/data/p2pool_payouts.csv';
+const csvUrl = '/data/blocks_found_dev.csv';
 const dateData = [];
 const totalData = [];
 
@@ -9,7 +9,7 @@ Papa.parse(csvUrl, {
   complete: data => {
     data.data.forEach(row => {
       const dateString = row['Date'];
-      const value = row['Total'];
+      const value = row['Blocks Found'];
 
       // Check for missing or invalid data
       if (!dateString || isNaN(value)) {
@@ -25,75 +25,10 @@ Papa.parse(csvUrl, {
       totalData.push({ x: date, y: value });
 
     });
-    
-    const areaOptions = {
-      chart: {
-        id: "barChart",
-        type: "area",
-        height: 275,
-        foreColor: "#ccc",
-        toolbar: {
-          autoSelected: "pan",
-          show: false
-        }
-      },
-      colors: ["#00baec"],
-      stroke: {
-        width: 3
-      },
-      grid: {
-        borderColor: "#555",
-        clipMarkers: false,
-        yaxis: {
-          lines: {
-            show: false
-          }
-        }
-      },
-      dataLabels: {
-        enabled: false
-      },
-      fill: {
-        gradient: {
-          enabled: true,
-          opacityFrom: 0.55,
-          opacityTo: 0,
-        }
-      },
-      markers: {
-        size: 0,
-        colors: ["#000524"],
-        strokeColor: "#00baec",
-        strokeWidth: 1
-      },
-      series: [
-        {
-          name: "Wallet Ballance",
-          data: totalData
-        }
-      ],
-      tooltip: {
-        theme: "dark"
-      },
-      title: {
-	text: 'P2Pool XMR Payouts',
-	align: 'left'
-      },
-      xaxis: {
-        type: "datetime"
-      //},
-      //yaxis: {
-      //  min: 0,
-      //  tickAmount: 4
-      }
-    };
-
-    var areaChart = new ApexCharts(document.querySelector("#areaChart"), areaOptions);
-    areaChart.render();
 
     var barOptions = {
       chart: {
-        id: "areaChart",
+        id: "barChart",
         height: 100,
         type: "bar",
         foreColor: "#ccc",
