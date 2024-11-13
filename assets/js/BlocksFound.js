@@ -82,10 +82,9 @@ Papa.parse(csvUrl, {
       },
       xaxis: {
         type: "datetime"
-      //},
-      //yaxis: {
-      //  min: 0,
-      //  tickAmount: 4
+      },
+      yaxis: {
+        min: 0
       }
     };
 
