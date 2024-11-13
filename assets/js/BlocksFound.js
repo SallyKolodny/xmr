@@ -39,6 +39,7 @@ Papa.parse(csvUrl, {
       },
       colors: ["#00baec"],
       stroke: {
+	curve: 'stepline',
         width: 3
       },
       grid: {
