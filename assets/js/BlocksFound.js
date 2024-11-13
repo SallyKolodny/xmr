@@ -69,7 +69,7 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Wallet Ballance",
+          name: "Blocks Found",
           data: totalData
         }
       ],

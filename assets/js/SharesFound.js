@@ -29,7 +29,7 @@ Papa.parse(csvUrl, {
     const areaOptions = {
       chart: {
         id: "barChart",
-        type: "area",
+        type: "bar",
         height: 275,
         foreColor: "#ccc",
         toolbar: {
@@ -69,7 +69,7 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Wallet Ballance",
+          name: "Shares Found",
           data: totalData
         }
       ],
