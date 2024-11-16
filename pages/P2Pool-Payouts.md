@@ -22,6 +22,3 @@ The chart below shows a visualization of the Monero XMR that the mining farm has
   </div>
  </div>
 
-Note that the graph is remarkably linear. The slight increase from mid June till the end of the month is when I burned through about $750 free credits of cloud resources and I setup various container configurations (1 CPU up to 8 CPU with 8 Gb up to 32 Gb) to mine in the cloud. The graph shows a direct relationship between hash rate and profitability and also shows that it's a consistent relationship over time.
-
-Finally, for anyone thinking about mining in the cloud: It's not worth it. In fact it's only because my rent includes electricity that I'm able to make this profitabable.
