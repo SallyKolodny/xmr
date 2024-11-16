@@ -29,7 +29,7 @@ Papa.parse(csvUrl, {
     const areaOptions = {
       chart: {
         id: "barChart",
-        type: "area",
+        type: "bar",
         height: 275,
         foreColor: "#ccc",
         toolbar: {
@@ -39,6 +39,7 @@ Papa.parse(csvUrl, {
       },
       colors: ["#00baec"],
       stroke: {
+	curve: 'stepline',
         width: 3
       },
       grid: {
@@ -68,7 +69,7 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Wallet Ballance",
+          name: "Blocks Found",
           data: totalData
         }
       ],
@@ -81,10 +82,9 @@ Papa.parse(csvUrl, {
       },
       xaxis: {
         type: "datetime"
-      //},
-      //yaxis: {
-      //  min: 0,
-      //  tickAmount: 4
+      },
+      yaxis: {
+        min: 0
       }
     };
 
@@ -108,8 +108,8 @@ Papa.parse(csvUrl, {
             opacity: 0.4
           },
           xaxis: {
-            min: new Date("08 November 2024 00:00:00").getTime(),
-            max: new Date("12 November 2024 23:59:59").getTime()
+            min: new Date("06 November 2024 00:00:00").getTime(),
+            max: new Date("16 November 2024 23:59:59").getTime()
           }
         }
       },
