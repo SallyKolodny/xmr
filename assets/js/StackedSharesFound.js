@@ -9,7 +9,9 @@ Papa.parse(csvUrl, {
   complete: data => {
     data.data.forEach(row => {
       const dateString = row['Date'];
-      const value = row['Shares Found'];
+      const kermit = row['Kermit'];
+      const sally = row['Sally'];
+
 
       // Check for missing or invalid data
       if (!dateString || isNaN(value)) {
@@ -22,7 +24,8 @@ Papa.parse(csvUrl, {
 
       dateData.push(date);
       //totalData.push(Number(total));
-      totalData.push({ x: date, y: value });
+      totalKermitData.push({ x: date, y: kermit });
+      totalSallyData.push({ x: date, y: sally });
 
     });
     
@@ -70,8 +73,12 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Shares Found",
-          data: totalData
+          name: "Kermit Shares Found",
+          data: totalKermitData
+        },
+        {
+          name: "Sally Shares Found",
+          data: totalSallyData
         }
       ],
       tooltip: {
