@@ -29,6 +29,7 @@ Papa.parse(csvUrl, {
     const areaOptions = {
       chart: {
         id: "barChart",
+        stacked: true,
         type: "bar",
         height: 275,
         foreColor: "#ccc",
