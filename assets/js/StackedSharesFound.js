@@ -42,7 +42,7 @@ Papa.parse(csvUrl, {
           show: false
         }
       },
-      colors: ["#00baec"],
+      colors: ["#00baec","#ffbaec"],
       stroke: {
 	    curve: 'stepline',
         width: 3
@@ -68,7 +68,7 @@ Papa.parse(csvUrl, {
       },
       markers: {
         size: 0,
-        colors: ["#000524", '#ff0000'],
+        colors: ["#000524"],
         strokeColor: "#00baec",
         strokeWidth: 1
       },
