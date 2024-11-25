@@ -1,6 +1,7 @@
 const csvUrl = '/data/stacked_shares_found.csv';
 const dateData = [];
-const totalData = [];
+const totalKermitData = [];
+const totalSallyData = [];
 
 Papa.parse(csvUrl, {
   download: true,
