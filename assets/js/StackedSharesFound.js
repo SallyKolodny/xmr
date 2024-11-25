@@ -2,6 +2,11 @@ const csvUrl = '/data/stacked_shares_found.csv';
 const dateData = [];
 const totalKermitData = [];
 const totalSallyData = [];
+const totalParisData = [];
+const totalMaiaData = [];
+const totalBingoData = [];
+const totalBratData = [];
+const totalPhoebeData = [];
 
 Papa.parse(csvUrl, {
   download: true,
@@ -12,6 +17,11 @@ Papa.parse(csvUrl, {
       const dateString = row['Date'];
       const kermit = row['Kermit'];
       const sally = row['Sally'];
+      const paris = row['Paris'];
+      const maia = row['Maia'];
+      const bingo = row['Bingo'];
+      const brat = row['Brat'];
+      const phoebe = row['Phoebe'];
 
 
       // Check for missing or invalid data
@@ -27,7 +37,11 @@ Papa.parse(csvUrl, {
       //totalData.push(Number(total));
       totalKermitData.push({ x: date, y: kermit });
       totalSallyData.push({ x: date, y: sally });
-
+      totalParisData.push({ x: date, y: paris });
+      totalMaiaData.push({ x: date, y: maia });
+      totalBingoData.push({ x: date, y: bingo });
+      totalBratData.push({ x: date, y: brat });
+      totalPhoebeData.push({ x: date, y: phoebe });
     });
     
     const areaOptions = {
@@ -42,7 +56,7 @@ Papa.parse(csvUrl, {
           show: false
         }
       },
-      colors: ["#00baec","#ffbaec"],
+      colors: ["#00baec","#ffbaec","#aabaec","#33baec","#55baec","#77baec","#99baec"],
       stroke: {
 	    curve: 'stepline',
         width: 3
@@ -74,13 +88,33 @@ Papa.parse(csvUrl, {
       },
       series: [
         {
-          name: "Shares Found by Kermit",
+          name: "Kermit",
           data: totalKermitData
         },
         {
-          name: "Shares Found by Sally",
+          name: "Sally",
           data: totalSallyData
-        }
+        },
+        {
+          name: "Paris",
+          data: totalParisData
+        },
+        {
+          name: "Maia",
+          data: totalMaiaData
+        },
+        {
+          name: "Bingo",
+          data: totalBingoData
+        },
+        {
+          name: "Brat",
+          data: totalBratData
+        },
+        {
+          name: "Phoebe",
+          data: totalPhoebeData
+        },
       ],
       tooltip: {
         theme: "dark"
