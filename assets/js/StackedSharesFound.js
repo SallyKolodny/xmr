@@ -68,17 +68,17 @@ Papa.parse(csvUrl, {
       },
       markers: {
         size: 0,
-        colors: ["#000524"],
+        colors: ["#000524", '#ff0000'],
         strokeColor: "#00baec",
         strokeWidth: 1
       },
       series: [
         {
-          name: "Kermit Shares Found",
+          name: "Shares Found by Kermit",
           data: totalKermitData
         },
         {
-          name: "Sally Shares Found",
+          name: "Shares Found by Sally",
           data: totalSallyData
         }
       ],
