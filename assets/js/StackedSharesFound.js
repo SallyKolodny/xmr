@@ -14,10 +14,10 @@ Papa.parse(csvUrl, {
 
 
       // Check for missing or invalid data
-      if (!dateString || isNaN(value)) {
-        console.log('Invalid or missing data found. Skipping this row.');
-        return;
-      }
+      //if (!dateString || isNaN(value)) {
+      //  console.log('Invalid or missing data found. Skipping this row.');
+      //  return;
+      //}
 
       // Parse the date string and convert it to a timestamp
       const date = new Date(dateString).getTime();
